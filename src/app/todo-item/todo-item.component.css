@@ -1,0 +1,29 @@
+.item-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+
+  .item-todo p {
+    flex: 1;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .material-symbols-outlined {
+    cursor: pointer;
+    color: #ccc;
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .material-symbols-outlined:hover {
+    color: #f00;
+  }

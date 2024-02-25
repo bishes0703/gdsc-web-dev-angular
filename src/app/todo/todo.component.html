@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>To-Do List</h1>
+    <input #inputTask type="text" id="new-task" placeholder="Add a new task" (keydown.enter)="addItem(inputTask.value)" />
+    <button type="submit" (click)="addItem(inputTask.value)">Add</button>
+    <ul>
+        @for (todo of tasks; track $index) {
+            <todo-item [task]="todo"  (onRemoveTodo)="onRemoveTodo($event)" />
+            }
+    </ul>
+</div>
